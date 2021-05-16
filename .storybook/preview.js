@@ -24,23 +24,24 @@
  * Each story throughout the library will be wrapped in a div with a margin of 3
  */
 
-/**
- * Parameters
- *
- * Most Storybook addons are configured via a parameter-based API.
- * You can set global parameters in this file
- *
- * export const parameters = {
- *   backgrounds: {
- *     values: [
- *       { name: 'red', value: '#f00' },
- *       { name: 'green', value: '#0f0' },
- *     ],
- *   },
- * };
- *
- * With backgrounds, you configure the list of backgrounds that every story can render in.
- */
+
+//   Parameters
+ 
+//   Most Storybook addons are configured via a parameter-based API.
+//  You can set global parameters in this file
+ 
+  export const parameters = {
+    
+    // backgrounds: {
+    //   values: [
+    //     { name: 'red', value: '#f00' },
+    //     { name: 'green', value: '#0f0' },
+    //   ],
+    // },
+  };
+ 
+//   With backgrounds, you configure the list of backgrounds that every story can render in.
+ 
 
 /**
  * Global Types

@@ -1,0 +1,64 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+
+
+.icon {
+  width: 0; 
+  height: 0; 
+  border-top: 0.75rem solid transparent;
+  border-bottom: 0.75rem solid transparent;
+  
+  border-left: 0.88rem solid $deepChampagne;
+  margin: 0.5rem;
+
+ 
+  transition: 100ms all ease;
+  
+  &.paused {
+    width: 0rem;
+    height: 40%;
+  
+    border-style: double;
+    border-width: 0 0rem 0 1rem;
+  }
+
+}
+
+.playPauseButton {
+  //make it a flexbox
+  display: flex;
+  // center the arrow in the middle
+  justify-content: center;
+  align-items: center;
+  //round the corners
+  border-radius: 50%;
+
+  //sizing
+  margin: 0.25rem;
+  width: 3.5rem;
+  height:3.5rem;
+
+  //color
+  background-color: $independence;
+  border: none;
+  box-shadow: inset;
+
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+  
+}
+
+.playPauseButton:hover {
+  background-color: mix($independence, $terraCotta, 85%);
+  scale: 1.05;
+  // outline-color: grey;
+  // outline-width: 0.4rem;
+  // outline-style: solid;
+}
+
+.playPauseButton:active {
+  scale: 0.95;
+  background-color: mix($independence, $greenSheen, 80%);
+}

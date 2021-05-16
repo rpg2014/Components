@@ -21,6 +21,7 @@ export default {
       sourcemap: true
     }
   ],
+  preserveModules: true,
   plugins: [
     peerDepsExternal(),
     resolve(),

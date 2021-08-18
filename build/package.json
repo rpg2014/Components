@@ -1,0 +1,11 @@
+{
+    "name": "rpg2014-components",
+    "version": "1.0.0",
+    "main": "build/index.js",
+    "module": "build/index.esm.js",
+    "files": [
+      "build"
+    ],
+    "types": "build/index.d.ts",
+    "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook"
+}

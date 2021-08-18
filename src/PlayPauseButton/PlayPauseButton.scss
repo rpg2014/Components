@@ -9,7 +9,7 @@
   border-top: 0.75rem solid transparent;
   border-bottom: 0.75rem solid transparent;
   
-  border-left: 0.88rem solid $deepChampagne;
+  border-left: 0.88rem solid $secondary;
   margin: 0.5rem;
 
  
@@ -40,7 +40,7 @@
   height:3.5rem;
 
   //color
-  background-color: $independence;
+  background-color: $background;
   border: none;
   box-shadow: inset;
 
@@ -51,7 +51,7 @@
 }
 
 .playPauseButton:hover {
-  background-color: mix($independence, $terraCotta, 85%);
+  background-color: mix($background, $primary, 85%);
   scale: 1.05;
   // outline-color: grey;
   // outline-width: 0.4rem;
@@ -60,5 +60,5 @@
 
 .playPauseButton:active {
   scale: 0.95;
-  background-color: mix($independence, $greenSheen, 80%);
+  background-color: mix($background, $accent, 80%);
 }

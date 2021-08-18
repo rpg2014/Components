@@ -5,9 +5,10 @@
 .skeleton {
     border-radius: 0.4rem;
     background-repeat: no-repeat;
+    // background-color: $eggshell;
     background-image: 
         linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 80% ),
-        linear-gradient($eggshell 100%, transparent 0);;
+        linear-gradient($text 100%, transparent 0);;
     background-size:
         50px 200px, /* highlight */
         100% 100%;  /* bg */
@@ -15,7 +16,7 @@
   
     margin: 1rem;
 
-    animation: shine 3s infinite ease;
+    animation: shine 1.5s infinite ease;
 }
 
 @keyframes shine {

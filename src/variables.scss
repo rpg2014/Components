@@ -12,3 +12,19 @@ $terraCotta: #e07a5f;
 $independence: #3d405b;
 $greenSheen: #81b29a;
 $deepChampagne: #f2cc8f;
+
+
+$primary: $terraCotta;
+$secondary: $deepChampagne;
+$accent: $greenSheen;
+$background: $independence;
+$text: $eggshell;
+
+
+.primary {
+    background-color: $terraCotta;
+}
+
+.accent {
+    background-color: $greenSheen;
+}

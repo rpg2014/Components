@@ -12,15 +12,15 @@
 .smallSize {
     width: 2rem;
     height: 2rem;
-    border: 0.5rem solid $eggshell;
-    border-top: 0.5rem solid $terraCotta;
+    border: 0.5rem solid $text;
+    border-top: 0.5rem solid $primary;
 }
 
 .largeSize {
     width: 4rem;
     height: 4rem;
-    border: 0.7rem solid $eggshell;
-    border-top: 0.7rem solid $terraCotta;
+    border: 0.7rem solid $text;
+    border-top: 0.7rem solid $primary;
 }
 
 @keyframes spin {

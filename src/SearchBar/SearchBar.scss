@@ -1,0 +1,123 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
+.SearchBarWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.searchLabel {
+    margin: 0rem 0rem 0rem 0.5rem;
+    color: rgba($color: $background, $alpha: 0.8)
+}
+
+
+.searchInput {
+    border: 0;
+    height: 2rem;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: rgba($color: #ffffff, $alpha: 0);
+    // appearance: none;
+    // --color: $accent;
+    transition: 100ms all ease;
+    outline: 0;
+}
+
+.searchBox {
+    
+    // border-top: 0;
+    // border-left: 0;
+    // border-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: 0;
+}
+
+.searchBoxOutline {
+    border:0.2rem solid $background;
+    border-radius: 3rem;
+    transition: 200ms all ease;
+    // --color: $accent;
+    &:focus::before,
+    &:focus::after,
+    &:focus-within,
+    &:focus,
+    &:focus-visible,
+    &:active,
+    &:hover{
+        border: 0.2rem solid $accent;
+        
+        animation: borderColorsOutline 200ms linear forwards;
+    }
+}
+
+.searchBoxBottom {
+    
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.2rem solid $background;
+    border-radius: 2px;
+    transition: 200ms all ease;
+    &:focus-within {
+        border-bottom: 0.2rem solid $accent;
+    }
+}
+
+
+.submitButton {
+    border: 0;
+    margin: 0;
+    background-color: rgba($color: #ffffff, $alpha: 0);
+    border: 0.12rem solid $primary;
+    border-radius: 4rem;
+    margin: 0.3rem 1rem ;
+    text-align: center;
+    color:$background;
+    
+
+    transition: 50ms all;
+    &:hover{
+       background-color: $accent; 
+       border: 0;
+       scale: 1.05;
+       color: $text
+    }
+}
+
+
+
+// from: https://codepen.io/DannyJoris/pen/BrMgza
+@keyframes borderColorsOutline {
+    0% {
+        
+      border-top-color: $background;
+      border-right-color: $background;
+      border-bottom-color: $background;
+      border-left-color: $background;
+    }
+    33% {
+        border-top-width: 100%;
+      border-top-color: $background;
+      border-right-color: $background;
+      border-bottom-color: $accent;
+      border-left-color: $background;
+  
+    }
+    66% {
+      border-top-color: $background;
+      border-right-color: $accent;
+      border-bottom-color: $accent;
+      border-left-color: $accent;
+    }
+    100% {
+      border-top-color: $accent;
+      border-right-color: $accent;
+      border-bottom-color: $accent;
+      border-left-color: $accent;
+    }
+  }

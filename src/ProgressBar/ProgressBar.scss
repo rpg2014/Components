@@ -1,0 +1,47 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
+.progressBarWrapper{
+  width: 45%;
+  height: 2rem;
+//   padding: 0.5rem;
+//   background-color: $text;
+
+}
+
+.progressBarBg {
+    background-color: $background;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 3rem;
+}
+
+.progressBarFg {
+    background-color: $primary;
+    height: 0.5rem;
+    overflow: hidden;
+    border-radius: .75rem;
+    
+    transition: 500ms width ease;
+}
+
+.progressBarFgHover:hover {
+    background-color: $accent;
+    outline-style: solid;
+    outline-color: $terraCotta;
+    outline-width: 0.15rem;
+}
+
+.progressBarLabel {
+    color: $independence;
+    
+    height: 0.4rem;
+    
+    // font-size: xx-small;
+    text-align: center;
+    vertical-align: text-top;
+    margin-bottom:  0.1rem
+}
+
+

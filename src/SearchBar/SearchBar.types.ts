@@ -6,5 +6,5 @@ export interface SearchBarProps {
     buttonLabel?: string;
     width?: string;
     variant: 'outline' | 'underline'
-    onChange?: (searchTest: string) => void
+    onChange?: (searchText: string) => void
 }

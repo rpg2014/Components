@@ -10,6 +10,7 @@ const SearchBar: React.FC<SearchBarProps> = (props) => {
   const [value, setValue] = useState("")
   const [active, setActive] = useState(false);
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    props.onChange(event.target.value)
     setValue(event.target.value);
   }
   return (

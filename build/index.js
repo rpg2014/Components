@@ -108,6 +108,7 @@ var SearchBar = function (props) {
     var _a = React.useState(""), value = _a[0], setValue = _a[1];
     var _b = React.useState(false), active = _b[0], setActive = _b[1];
     var onChange = function (event) {
+        props.onChange(event.target.value);
         setValue(event.target.value);
     };
     return (React__default['default'].createElement("div", { className: "SearchBarWrapper", style: { width: props.width } },
